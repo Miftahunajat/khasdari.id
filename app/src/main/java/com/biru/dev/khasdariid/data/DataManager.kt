@@ -1,10 +1,10 @@
-package com.groot.indonesia.grootapp.data
+package com.biru.dev.khasdariid.data
 
-import com.groot.indonesia.grootapp.data.firebase.FirebaseDataManager
-import com.groot.indonesia.grootapp.data.prefs.PreferenceHelper
+
+import com.biru.dev.khasdariid.data.prefs.PreferenceHelper
 
 /**
  * Created by miftahun on 3/8/18.
  */
 
-interface DataManager : FirebaseDataManager, PreferenceHelper
+interface DataManager : PreferenceHelper

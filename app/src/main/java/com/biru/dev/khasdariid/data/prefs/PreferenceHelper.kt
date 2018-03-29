@@ -1,4 +1,4 @@
-package com.groot.indonesia.grootapp.data.prefs
+package com.biru.dev.khasdariid.data.prefs
 
 /**
  * Created by miftahun on 3/8/18.
