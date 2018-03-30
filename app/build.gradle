@@ -44,4 +44,7 @@ dependencies {
 
     //Material Rating Bar
     implementation 'me.zhanghai.android.materialratingbar:library:1.2.0'
+
+    //Image Slider
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
 }

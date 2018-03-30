@@ -23,7 +23,7 @@ abstract class BaseFragment : Fragment(), MvpView{
         setHasOptionsMenu(false)
     }
 
-    override fun onViewCreated(view: View?, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setUp(view)
     }
@@ -38,7 +38,7 @@ abstract class BaseFragment : Fragment(), MvpView{
 
     override fun showLoading() {
         hideLoading()
-        progressDialog = CommonUtils.showLoadingDialog(this.context)
+        progressDialog = CommonUtils.showLoadingDialog(this.context!!)
     }
 
     override fun hideLoading() {
