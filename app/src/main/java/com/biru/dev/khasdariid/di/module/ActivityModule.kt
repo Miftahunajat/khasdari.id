@@ -7,6 +7,9 @@ import com.biru.dev.khasdariid.di.PerActivity
 import com.biru.dev.khasdariid.ui.login.LoginMvpPresenter
 import com.biru.dev.khasdariid.ui.login.LoginMvpView
 import com.biru.dev.khasdariid.ui.login.LoginPresenter
+import com.biru.dev.khasdariid.ui.main.MainMvpPresenter
+import com.biru.dev.khasdariid.ui.main.MainMvpView
+import com.biru.dev.khasdariid.ui.main.MainPresenter
 import com.biru.dev.khasdariid.ui.register.RegisterMvpPresenter
 import com.biru.dev.khasdariid.ui.register.RegisterMvpView
 import com.biru.dev.khasdariid.ui.register.RegisterPresenter
@@ -58,10 +61,10 @@ class ActivityModule(val mActivity: AppCompatActivity) {
         return presenter
     }
 //
-//    @Provides
-//    @PerActivity
-//    internal fun provideMainPresenter(
-//            presenter: MainPresenter<MainMvpView>): MainMvpPresenter<MainMvpView> {
-//        return presenter
-//    }
+    @Provides
+    @PerActivity
+    internal fun provideMainPresenter(
+            presenter: MainPresenter<MainMvpView>): MainMvpPresenter<MainMvpView> {
+        return presenter
+    }
 }

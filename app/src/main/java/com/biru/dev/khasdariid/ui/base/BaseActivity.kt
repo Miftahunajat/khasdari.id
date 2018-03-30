@@ -29,7 +29,7 @@ import com.biru.dev.khasdariid.utils.NetworkUtils
  * Created by miftahun on 3/8/18.
  */
 
-abstract class BaseActivity : AppCompatActivity(), MvpView {
+abstract class BaseActivity : AppCompatActivity(), MvpView,BaseFragment.Callback {
 
     private var mProgressDialog: ProgressDialog? = null
     lateinit var activityComponent: ActivityComponent
@@ -99,5 +99,11 @@ abstract class BaseActivity : AppCompatActivity(), MvpView {
 
     protected abstract fun setUp()
 
+    override fun onFragmentAttached() {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 
+    override fun onFragmentDetached(tag: String) {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 }

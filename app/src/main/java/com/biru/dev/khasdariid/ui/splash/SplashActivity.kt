@@ -1,5 +1,6 @@
 package com.biru.dev.khasdariid.ui.splash
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import com.biru.dev.khasdariid.R
@@ -8,6 +9,7 @@ import javax.inject.Inject
 import android.view.View.SYSTEM_UI_FLAG_FULLSCREEN
 import android.view.Window
 import android.view.WindowManager
+import com.biru.dev.khasdariid.ui.main.MainActivity
 
 
 class SplashActivity : BaseActivity(), SplashMvpView {
@@ -35,7 +37,7 @@ class SplashActivity : BaseActivity(), SplashMvpView {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
-    override fun hideStatusBar() {
-
+    override fun openLoginActivity() {
+        startActivity(Intent(this, MainActivity::class.java))
     }
 }

@@ -12,6 +12,8 @@ import javax.inject.Inject
 open class BasePresenter<V : MvpView> @Inject internal
 constructor(val appDataManager: DataManager) : MvpPresenter<V> {
 
+    lateinit var appDatamanager: DataManager
+
     private var mvpView: V? = null
     private val isViewAttached: Boolean get() = mvpView != null
 

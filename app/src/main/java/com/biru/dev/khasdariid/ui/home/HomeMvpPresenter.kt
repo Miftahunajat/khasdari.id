@@ -1,4 +1,4 @@
-package com.biru.dev.khasdariid.ui.splash
+package com.biru.dev.khasdariid.ui.home
 
 import com.biru.dev.khasdariid.di.PerActivity
 import com.biru.dev.khasdariid.ui.base.MvpPresenter
@@ -9,7 +9,6 @@ import com.biru.dev.khasdariid.ui.base.MvpPresenter
  */
 
 @PerActivity
-interface SplashMvpPresenter<V : SplashMvpView> : MvpPresenter<V> {
+interface HomeMvpPresenter<V : HomeMvpView> : MvpPresenter<V> {
 
-    fun loadData()
 }

@@ -41,4 +41,7 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
     kapt "com.google.dagger:dagger-android-processor:$rootProject.dagger2Version"
     implementation "com.google.dagger:dagger-android-support:$rootProject.dagger2Version"
+
+    //Material Rating Bar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.2.0'
 }

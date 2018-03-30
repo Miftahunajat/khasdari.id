@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_gray_box"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </android.support.v7.widget.SearchView>
+
+    <TextView
+        android:id="@+id/text_tempat_wisata_terpopuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tempat Wisata Terpopuler"
+        app:layout_constraintLeft_toLeftOf="@+id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        style="@style/defaultTextStyleBlack"
+        />
+    <FrameLayout
+        android:id="@+id/frame_tempat_wisata"
+        app:layout_constraintTop_toBottomOf="@id/text_tempat_wisata_terpopuler"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightGray"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_oleh_oleh_terpopuler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/text_oleh_terpopuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oleh Oleh Terpopuler"
+        app:layout_constraintLeft_toLeftOf="@+id/search_bar"
+        app:layout_constraintTop_toBottomOf="@+id/frame_tempat_wisata"
+        style="@style/defaultTextStyleBlack"
+        />
+    <FrameLayout
+        app:layout_constraintTop_toBottomOf="@id/text_oleh_terpopuler"
+        android:layout_marginTop="16dp"
+        android:background="@color/lightGray"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_tempat_populer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        </android.support.v7.widget.RecyclerView>
+
+    </FrameLayout>
+
+</android.support.constraint.ConstraintLayout>

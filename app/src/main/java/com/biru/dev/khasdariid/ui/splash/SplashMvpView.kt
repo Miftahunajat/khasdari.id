@@ -9,6 +9,5 @@ import com.biru.dev.khasdariid.ui.base.MvpView
 
 interface SplashMvpView : MvpView {
 
-    fun hideStatusBar()
-
+    fun openLoginActivity()
 }
