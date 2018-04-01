@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.biru.dev.khasdariid">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:name=".App"
         android:allowBackup="true"
@@ -20,6 +22,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.login.LoginActivity" />
+        <activity android:name=".ui.placedetail.PlaceDetailActivity"
+            android:parentActivityName=".ui.main.MainActivity"/>
         <activity android:name=".ui.register.RegisterActivity" />
         <activity
             android:name=".ui.main.MainActivity"

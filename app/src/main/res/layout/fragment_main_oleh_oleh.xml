@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_gray_box"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </android.support.v7.widget.SearchView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_tag"
+        app:layout_constraintTop_toBottomOf="@id/search_bar"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"/>
+
+    <TextView
+        android:id="@+id/text_rekomendasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rekomendasi"
+        android:fontFamily="@font/latoregular"
+        app:layout_constraintTop_toBottomOf="@id/rv_item_tag"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="24sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_rekomendasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_rekomendasi"
+        app:layout_constraintLeft_toLeftOf="@id/text_rekomendasi"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_terbaru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terbaru"
+        android:fontFamily="@font/latoregular"
+        app:layout_constraintTop_toBottomOf="@id/rv_item_rekomendasi"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="24sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_item_terbaru"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/text_terbaru"
+        app:layout_constraintLeft_toLeftOf="@id/text_terbaru"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"/>
+
+</android.support.constraint.ConstraintLayout>

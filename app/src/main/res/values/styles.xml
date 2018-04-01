@@ -6,6 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -23,10 +24,10 @@
     </style>
     
     <style name="RatingBar" parent="Widget.MaterialRatingBar.RatingBar.Indicator.Small">
-        <item name="android:layout_width">65dp</item>
-        <item name="android:layout_height">13dp</item>
+        <item name="android:layout_width">75dp</item>
+        <item name="android:layout_height">23dp</item>
         <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:rating">4.5</item>
+        <item name="android:rating">5</item>
     </style>
 
     <style name="TabStyle" parent="Widget.Design.TabLayout">

@@ -9,9 +9,11 @@ import com.biru.dev.khasdariid.ui.detailrute.DetailRuteFragment
 import com.biru.dev.khasdariid.ui.home.HomeFragment
 import com.biru.dev.khasdariid.ui.login.LoginActivity
 import com.biru.dev.khasdariid.ui.main.MainActivity
+import com.biru.dev.khasdariid.ui.oleholeh.OlehOlehFragment
 import com.biru.dev.khasdariid.ui.placedetail.PlaceDetailActivity
 import com.biru.dev.khasdariid.ui.register.RegisterActivity
 import com.biru.dev.khasdariid.ui.splash.SplashActivity
+import com.biru.dev.khasdariid.ui.userinfo.UserInfoFragment
 import com.groot.indonesia.grootapp.di.module.ActivityModule
 
 import dagger.Component
@@ -45,5 +47,9 @@ interface ActivityComponent {
     fun inject(detailOlehOlehFragment: DetailOlehOlehFragment)
 
     fun inject(detailReviewFragment: DetailReviewFragment)
+
+    fun inject(userInfoFragment: UserInfoFragment)
+
+    fun inject(olehOlehFragment: OlehOlehFragment)
 
 }

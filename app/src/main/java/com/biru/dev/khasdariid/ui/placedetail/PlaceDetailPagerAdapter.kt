@@ -3,6 +3,11 @@ package com.biru.dev.khasdariid.ui.placedetail
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentPagerAdapter
+import com.biru.dev.khasdariid.ui.detaildeskripsi.DetailDeskripsiFragment
+import com.biru.dev.khasdariid.ui.detaillokasi.DetailLokasiFragment
+import com.biru.dev.khasdariid.ui.detailoleholeh.DetailOlehOlehFragment
+import com.biru.dev.khasdariid.ui.detailreview.DetailReviewFragment
+import com.biru.dev.khasdariid.ui.detailrute.DetailRuteFragment
 import java.util.ArrayList
 
 /**
@@ -13,9 +18,6 @@ class PlaceDetailPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerA
     var fragmentArrayList = ArrayList<Fragment>()
     private val tabTitles = arrayOf("1", "2", "3", "4", "5")
 
-    override fun getItem(position: Int): Fragment {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
 
     override fun getPageTitle(position: Int): CharSequence? {
         return tabTitles[position]
@@ -26,10 +28,11 @@ class PlaceDetailPagerAdapter(fragmentManager: FragmentManager) : FragmentPagerA
     }
 
     override fun getItem(position: Int): Fragment {
-        fragmentArrayList.add(NumbersFragment())
-        fragmentArrayList.add(FamilyFragment())
-        fragmentArrayList.add(ColorsFragment())
-        fragmentArrayList.add(PhraseFragment())
+        fragmentArrayList.add(DetailDeskripsiFragment())
+        fragmentArrayList.add(DetailLokasiFragment())
+        fragmentArrayList.add(DetailRuteFragment())
+        fragmentArrayList.add(DetailOlehOlehFragment())
+        fragmentArrayList.add(DetailReviewFragment())
         return fragmentArrayList[position]
     }
 }

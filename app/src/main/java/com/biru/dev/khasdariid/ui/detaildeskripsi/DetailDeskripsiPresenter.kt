@@ -2,6 +2,7 @@ package com.biru.dev.khasdariid.ui.detaildeskripsi
 
 import com.biru.dev.khasdariid.data.DataManager
 import com.biru.dev.khasdariid.ui.base.BasePresenter
+import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
 
@@ -10,7 +11,7 @@ import javax.inject.Inject
  */
 
 class DetailDeskripsiPresenter<V : DetailDeskripsiMvpView> @Inject
-constructor(dataManager: DataManager) : BasePresenter<V>(dataManager), DetailDeskripsiMvpPresenter<V> {
+constructor(dataManager: DataManager, compositeDisposable: CompositeDisposable) : BasePresenter<V>(dataManager,compositeDisposable), DetailDeskripsiMvpPresenter<V> {
 
 
     companion object {

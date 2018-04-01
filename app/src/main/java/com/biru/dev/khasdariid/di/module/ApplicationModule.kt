@@ -5,6 +5,8 @@ import android.content.Context
 import com.biru.dev.khasdariid.di.ApplicationContext
 import com.biru.dev.khasdariid.data.AppDataManager
 import com.biru.dev.khasdariid.data.DataManager
+import com.biru.dev.khasdariid.data.fake.AppDatabaseModelFactory
+import com.biru.dev.khasdariid.data.fake.DatabaseModel
 import com.biru.dev.khasdariid.data.prefs.AppPreferenceHelper
 import com.biru.dev.khasdariid.data.prefs.PreferenceHelper
 
@@ -52,6 +54,11 @@ class ApplicationModule(val mApplication: Application) {
     @PreferenceInfo
     internal fun providePreferenceName(): String {
         return AppConstant.PREF_NAME
+    }
+
+    @Provides
+    internal fun provideDatabaseModel(appDatabaseModelFactory: AppDatabaseModelFactory): DatabaseModel{
+        return appDatabaseModelFactory
     }
 
 }

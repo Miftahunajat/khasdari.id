@@ -11,4 +11,8 @@ import com.biru.dev.khasdariid.ui.base.MvpPresenter
 @PerActivity
 interface HomeMvpPresenter<V : HomeMvpView> : MvpPresenter<V> {
 
+    fun onLoadWisataPopular()
+
+    fun onLoadOlehOlehPopuler()
+
 }

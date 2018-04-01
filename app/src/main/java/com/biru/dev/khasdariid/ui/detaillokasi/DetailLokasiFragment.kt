@@ -40,6 +40,5 @@ class DetailLokasiFragment : BaseFragment(), DetailLokasiMvpView {
     }
 
     override fun setUp(view: View?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 }

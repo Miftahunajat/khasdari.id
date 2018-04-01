@@ -11,4 +11,5 @@ import com.biru.dev.khasdariid.ui.base.MvpPresenter
 @PerActivity
 interface PlaceDetailMvpPresenter<V : PlaceDetailMvpView> : MvpPresenter<V> {
 
+    fun loadDataWisata(id: Int)
 }

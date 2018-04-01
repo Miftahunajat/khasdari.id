@@ -10,4 +10,6 @@ import com.biru.dev.khasdariid.ui.base.MvpView
 interface SplashMvpView : MvpView {
 
     fun openLoginActivity()
+
+    fun updateProgress(int: Int)
 }

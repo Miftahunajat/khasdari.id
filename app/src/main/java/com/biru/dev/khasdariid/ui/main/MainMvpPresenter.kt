@@ -11,4 +11,13 @@ import com.biru.dev.khasdariid.ui.base.MvpPresenter
 @PerActivity
 interface MainMvpPresenter<V : MainMvpView> : MvpPresenter<V> {
 
+    fun onHomeClicked()
+
+    fun onBookmarkClicked()
+
+    fun onOlehOlehClicked()
+
+    fun onWisataClicked()
+
+    fun onUserInfoClicked()
 }

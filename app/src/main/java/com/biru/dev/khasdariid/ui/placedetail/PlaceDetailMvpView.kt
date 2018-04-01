@@ -9,4 +9,7 @@ import com.biru.dev.khasdariid.ui.base.MvpView
 
 interface PlaceDetailMvpView : MvpView {
 
+    fun setupSlider(photos: List<Int>)
+
+    fun setTitleName(name:String)
 }

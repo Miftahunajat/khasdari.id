@@ -2,6 +2,7 @@ package com.biru.dev.khasdariid.ui.register
 
 import com.biru.dev.khasdariid.data.DataManager
 import com.biru.dev.khasdariid.ui.base.BasePresenter
+import io.reactivex.disposables.CompositeDisposable
 import javax.inject.Inject
 
 
@@ -10,7 +11,7 @@ import javax.inject.Inject
  */
 
 class RegisterPresenter<V : RegisterMvpView> @Inject
-constructor(dataManager: DataManager) : BasePresenter<V>(dataManager), RegisterMvpPresenter<V> {
+constructor(dataManager: DataManager, compositeDisposable: CompositeDisposable) : BasePresenter<V>(dataManager,compositeDisposable), RegisterMvpPresenter<V> {
 
 
     companion object {
