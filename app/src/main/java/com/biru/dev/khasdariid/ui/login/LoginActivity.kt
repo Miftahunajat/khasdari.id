@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import com.biru.dev.khasdariid.R
 import com.biru.dev.khasdariid.ui.base.BaseActivity
+import kotlinx.android.synthetic.main.activity_login.*
 import javax.inject.Inject
 
 
